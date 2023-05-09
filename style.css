@@ -34,6 +34,10 @@ img {
 /* reset and common code ends here */
 
 /* navbar starts here */
+#menu-icon {
+  display: none;
+}
+
 nav {
   font-family: "Times New Roman", Times, serif;
   font-size: 1.2rem;
@@ -85,3 +89,30 @@ nav {
   font-size: 2rem;
 }
 /* navbar ends here */
+
+/* responsiveness starts here */
+@media screen and (max-width: 992px) {
+  #menu-icon {
+    display: block;
+    text-align: center;
+    margin: 1rem 0;
+    cursor: pointer;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .display-space-around {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 0rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 992px) {
+}
+/* responsiveness ends here */
