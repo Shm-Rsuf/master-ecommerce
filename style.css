@@ -31,6 +31,12 @@ img {
   align-items: center;
 }
 
+.display-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* reset and common code ends here */
 
 /* navbar starts here */
@@ -90,6 +96,71 @@ nav {
 }
 /* navbar ends here */
 
+/* header starts here */
+.header {
+  padding: 4rem;
+  height: 80vh;
+  background-image: url("https://images.unsplash.com/photo-1654855114931-9060aa20c17c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.banner-title {
+  font-size: 3rem;
+  color: rgba(255, 255, 0, 0.856);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+}
+
+.features {
+  width: 100%;
+}
+
+.feature {
+  background-color: rgb(80, 160, 78, 0.7);
+  color: white;
+  padding: 1rem;
+  gap: 1rem;
+  width: 15rem;
+  border-radius: var(--border-radius);
+  flex-direction: column;
+}
+
+.feature-icon {
+  font-size: 3rem;
+}
+/* header ends here */
+
+/* main starts here */
+main {
+  padding: 4rem 0;
+  min-height: 70vh;
+  background-color: tomato;
+}
+/* main ends here */
+
+/* footer starts here */
+.footer {
+  height: 10vh;
+  background-color: var(--primary-color);
+  padding: var(--padding);
+  color: white;
+}
+
+.footer-input,
+.btn-subscribe {
+  padding: var(--padding);
+}
+/* footer ends here */
+
 /* responsiveness starts here */
 @media screen and (max-width: 992px) {
   #menu-icon {
@@ -103,10 +174,19 @@ nav {
     display: none;
   }
 
-  .display-space-around {
+  .display-space-around,
+  .display-center {
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
     padding: 1rem 0rem;
+  }
+
+  .header {
+    height: 100vh;
+  }
+
+  .feature-icon {
+    font-size: 2rem;
   }
 }
 
