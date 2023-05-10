@@ -37,6 +37,10 @@ img {
   align-items: center;
 }
 
+.section-title {
+  font-size: 2rem;
+}
+
 /* reset and common code ends here */
 
 /* navbar starts here */
