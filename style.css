@@ -37,6 +37,12 @@ img {
   align-items: center;
 }
 
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .section-title {
   font-size: 2rem;
 }
@@ -271,6 +277,22 @@ main {
 .hr-design {
   margin: 0.5rem 0;
 }
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-btn {
+  padding: var(--padding);
+  border-width: 1px 1px 1px 0px;
+}
+
+.pagination-btn:first-child {
+  border-width: 1px 1px 1px 1px;
+}
+
 /* main ends here */
 
 /* footer starts here */
@@ -314,9 +336,16 @@ main {
   .feature-icon {
     font-size: 2rem;
   }
+
+  .products {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
+  .products {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
 }
 
 @media screen and (max-width: 992px) {
